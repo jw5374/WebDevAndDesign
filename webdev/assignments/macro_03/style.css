@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    text-align: left;
+}
+
+p {
+    margin-block: 0.5em;
+}
+
+#forest_container {
+    flex: 0 0 800px;
+    height: 600px;
+    position: relative;
+}
+
+#background {
+    width: 100%;
+}
+
+#progress {
+    font-size: 2em;
+}
+    
+.item-container {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.ui-container {
+    padding: 0.175em;
+}
+
+.history {
+    height: 175px;
+    overflow-y: scroll;
+}
+
+.game-over {
+    font-size: 5rem;
+    text-align: center;
+    height: 175px;
+    line-height: 175px;
+    color: red;
+}
+
+.grass {
+    transition: filter 100ms ease-in;
+}
+
+.grass:hover {
+    background-color: rgba(0, 247, 148, 0.1)
+}
+
+.histo-block {
+    display: inline-block;
+    width: 5em;
+    height: 25px;
+}
+
+.disable {
+    pointer-events: none;
+}
+
+.blur {
+    filter: blur(5px)
+}
+
+.hide {
+    display: none;
+}
+

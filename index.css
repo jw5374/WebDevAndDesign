@@ -1,0 +1,51 @@
+html {
+    background-color: black;
+}
+
+body {
+    color: white;
+}
+
+body h1 {
+    color: cyan;
+    display: inline-block;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+header svg {
+    width: 25%;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    padding-block: 1em;
+}
+
+svg {
+    height: 100%;
+    width: 100%;
+}
+
+a:active {
+    color: deepskyblue;
+}
+
+a:hover {
+    color: lime;
+}
+
+/* just to supersede the element style since selecting "a" tag will not overwrite preexisting fill */
+svg rect:active {
+    fill: deepskyblue; 
+}
+
+svg rect:hover {
+    fill: lime;
+    opacity: 0.2;
+}

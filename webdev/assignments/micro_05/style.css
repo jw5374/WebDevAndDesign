@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    padding: 2rem;
+}
+
+.button-container {
+    margin-bottom: 2.25rem;
+}
+
+.graphic {
+    aspect-ratio: 1;
+    width: 150px;
+    background-color: darkcyan;
+    border: 15px dashed magenta;
+    margin: 1rem;
+}
+
+section[title="Generated Boxes"] {
+    padding-top: 1rem;
+}
+
+@keyframes left-animation {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes right-animation {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.left-animation {
+    animation-name: left-animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.right-animation {
+    animation-name: right-animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.pause {
+    animation-play-state: paused;
+}
+

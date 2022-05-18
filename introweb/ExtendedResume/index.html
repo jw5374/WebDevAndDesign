@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/logo_smallest.png">
+    <link rel="stylesheet" href="./styling/style.css">
+    <script src="./scripts/script.js" defer></script>
+    <script src="./scripts/videoHandler.js" defer></script>
+    <title>Home</title>
+</head>
+<body>
+    <div class="grid-wrapper">
+        <div class="sidebar">
+            <nav>
+                <span class="active-link">Home</span>
+                <a href="./details/background.html">Background</a>
+                <a href="./details/skills.html">Skills</a>
+                <a href="./details/projects.html">Projects</a>
+                <a href="./details/sources.html">Sources</a>
+            </nav>
+        </div>
+        <div class="content-container">
+            <div id="dimmer"></div>
+            <header class="content-sections">
+                <div class="content-background background-background"></div>
+                <section class="overlay">
+                    <h1><div class="typewriter">Hi. I'm Joseph Wang. </div></h1>
+                    <p>
+                        I've been programming for about 5 years now.
+                        <br>
+                        Pursuing a BA in Computer Science from New York University.
+                        <br>
+                        Went to High School in New London, CT.
+                    </p>
+                </section>
+            </header>
+            <main class="content-sections">
+                <video class="skills-background" autoplay loop muted></video>
+                <section class="overlay">
+                    <h1>I've Learned</h1>
+                    <p>
+                        I've completed courses and projects utilizing various languages including:&nbsp;
+                    </p>
+                    <ul>
+                        <li>Javascript</li>
+                        <li>Python</li>
+                        <li>C</li>
+                    </ul>
+                    <p>Particularly experienced with Node applications, largely in terms of backend development (with Expressjs).</p>
+                </section>
+            </main>
+            <footer class="content-sections">
+                <div class="content-background projects-background"></div>
+                <section class="overlay">
+                    <h1>I've Worked On</h1>
+                    <p>
+                        Various projects largely related to web development, or backend API design.
+                    </p>
+                    <ul>
+                        <li> &#x202D;"Rest in Bankruptcy", a project that gathers bankruptcy filings for companies during Covid, and visualizes it in a Unity environment.</li>
+                        <li>&#x202D;"Teachess" was a simple MERN website that aimed to teach basic chess concepts</li>
+                        <li>&#x202D;An internship at "Shoptaki", that largely had me develop their backend APIs.</li>
+                        <li>&#x202D;"Toothpaste", a Discord bot that has chat moderation features, and other miscellaneous commands.</li>
+                    </ul>
+                </section>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

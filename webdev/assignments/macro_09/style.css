@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#chatlog {
+    resize: none;
+}
+
+.chat-screen {
+    width: min-content;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.error {
+    color: red;
+}
+
+.hide {
+    display: none;
+}

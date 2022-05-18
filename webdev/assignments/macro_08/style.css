@@ -1,0 +1,49 @@
+body {
+    font-family: sans-serif;
+}
+
+form textarea {
+    resize: none;
+}
+
+#new-post-button {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+#new-comment-button {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+#login-form {
+    display: inline-block;
+}
+
+#search-form {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.queryresults {
+    padding: 1em;
+}
+
+.hide {
+    display: none;
+}
+
+.success {
+    padding: 1em;
+    color: white;
+    background-color: forestgreen;
+    font-weight: bolder;
+}
+
+.error {
+    padding: 1em;
+    color: white;
+    background-color: red;
+    font-weight: bolder;
+}

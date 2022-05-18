@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Macro Assignment 10</title>
+</head>
+<body>
+    <div id="start-screen">
+        <h1>Memory Matching Madness!</h1>
+        <p>Play a fast-paced game of "memory" and try and beat your best time</p>
+        <button id="show-leader">Leaderboards</button>
+        <br><br>
+        <button id="easy-button">Easy (4x3)</button>
+        <button id="medium-button">Medium (5x4)</button>
+        <button id="hard-button">Hard (6x5)</button>
+        <br><br>
+        <div>
+            <button id="show-login">Login</button>
+            <button id="show-register">Register</button>
+            <button id="logout-button" class="hide">Logout</button>
+            <p class="error hide" id="reg-error">Username Taken</p>
+            <p class="error hide" id="login-error">Incorrect Credentials</p>
+        </div><br>
+        <form id="login-form" class="hide">
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required><br><br>
+            <input type="submit" value="Login">
+        </form>
+        <form id="register-form" class="hide">
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required><br><br>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+    <main class="hide">
+        <h1>Ready, Set, Match!</h1>
+        <p data-time="0">Time: 0</p>
+        <section id="play-grid"></section>
+    </main>
+    <div id="gameover-screen" class="hide">
+        <h1>Game over!</h1>
+        <p id="current-time">Your time: </p>
+        <p>You must Login/Register to have your score saved!</p>
+        <button id="playagain-button">Play Again!</button>
+    </div>
+    <div class="hide" id="leaderboards">
+        <h1>Leaderboards</h1>
+        <button id="showuserhistory">Toggle User History</button>
+        <br><br>
+        <div id="leaderboard-container">
+            <div id="easyboard"></div>
+            <div id="mediumboard"></div>
+            <div id="hardboard"></div>
+        </div>
+        <div class="hide" id="userhistory"></div>
+        <br><br>
+        <button id="home">Return Home</button>
+    </div>
+</body>
+</html>

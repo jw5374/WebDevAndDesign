@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Macro Assignment 06</title>
+</head>
+<body>
+    <div id="start-screen">
+        <h1>Memory Matching Madness!</h1>
+        <p>Play a fast-paced game of "memory" and try and beat your best time</p>
+        <button id="easy-button">Easy (4x3)</button>
+        <button id="medium-button">Medium (5x4)</button>
+        <button id="hard-button">Hard (6x5)</button>
+    </div>
+    <main class="hide">
+        <h1>Ready, Set, Match!</h1>
+        <p data-time="0">Time: 0</p>
+        <section id="play-grid"></section>
+    </main>
+    <div id="gameover-screen" class="hide">
+        <h1>Game over!</h1>
+        <p id="current-time">Your time: </p>
+        <p id="best-time">Best times - </p>
+        <div class="hide">
+            <p>New Highscore!</p>
+            <label for="timename">Name:</label>
+            <input type="text" name="timename" id="time-name">
+            <button id="save-record">Save</button>
+        </div>
+        <button id="playagain-button">Play Again!</button>
+    </div>
+</body>
+</html>

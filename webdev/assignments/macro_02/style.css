@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    background-color: slategray;
+}
+
+main {
+    position: relative;
+    width: min-content;
+}
+
+.background {
+    max-height: 100vh;
+}
+
+[data-status] {
+    position: absolute;
+    top: 0;
+    left: 35px;
+}
+
+[data-status] h1 {
+    color: white;
+    text-shadow: 0 0 10px black;
+    margin-bottom: 0.95em;
+}
+
+[data-status] .info {
+    width: max-content;
+    background-color: rgba(255, 255, 255, 0.63);
+    color: black;
+    border-radius: 1em;
+    font-size: xx-small;
+    padding-inline: 0.5em;
+    padding-block: 0.25em;
+}
+
+[data-legoman] {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: -40px;
+    right: 145px;
+    transform: scale(0.77);
+}
+
+[data-lego-decal] {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    bottom: 163px;
+    right: 70px;
+    filter: drop-shadow(0 0 2px black);
+}

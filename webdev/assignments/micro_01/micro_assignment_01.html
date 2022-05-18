@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+    <title>Micro Assignment #01</title>
+    <style type="text/css">
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    a {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+    }
+
+    #container {
+        position: relative;
+        width: 800px;
+        height: 480px;
+    }
+
+    #background {
+        position: absolute;
+        inset: 0;
+    }
+
+    #tree {
+        position: absolute;
+        width: 348px;
+        height: 400px;
+        left: 120px;
+        bottom: 48px;
+        z-index: 1;
+    }
+
+    #pika {
+        position: absolute;
+        aspect-ratio: 1;
+        width: 150px;
+        left: 120px;
+        bottom: 0;
+        z-index: 2;
+    }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- background.jpg: 800 x 480 -->
+    <!-- pikachu.png: 150 x 150 -->
+    <!-- tree.png: 348 x 400 -->
+    <a href="../../">Home</a>
+    <div id="container">
+        <img id="background" src="background.jpg" alt="background-image">
+        <img id="tree" src="tree.png" alt="tree-image">
+        <img id="pika" src="pikachu.png" alt="pikachu">
+    </div>
+
+</body>
+</html>

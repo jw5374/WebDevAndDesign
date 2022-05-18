@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Gotta Catch 'em All!</title>
+</head>
+<body>
+    <main>
+        <div id="forest_container">
+            <img id="background" src="../../assets/assignment03_images/images/environment_forestbackground.png">
+            <div class="item-container">
+                <img class="grass" id="g1" src="../../assets/assignment03_images/images/grass.png">
+                <img class="grass" id="g2" src="../../assets/assignment03_images/images/grass.png">
+                <img class="grass" id="g3" src="../../assets/assignment03_images/images/grass.png">
+            </div>
+        </div>
+        <div class="ui-container">
+            <h1>Gotta Catch 'em All!</h1>
+            <p>Your goal in this game is to earn as many Pokeballs as possible while catching a variety of Pokemon along the way.</p>
+            <p>To play simply click on one of the three grass clumps in the forest. Behind one of those grass clumps is a Pokemon that can be caught. Behind another grass clump are two free Pokeballs that you can use to try again, and behind the last grass clump is nothing.</p>
+            <p>Note that each time you pick a grass clump you will be using one of your Pokeballs, and when you run out the game will be over!</p>
+            <h2 class="super"></h2>
+            <div id="progress">Your progress so far ...</div>
+            <div>Pokeballs left: <span id="pokeballs_left">5</span></div>
+            <div>Pokemon caught: <span id="pokemon_caught">0</span></div>
+            <button class="hide" id="play_again_button">Play Again</button> 
+            <div>
+                <div class="history-buttons">
+                    <button id="clear-history">Clear History</button> 
+                    <button id="restart">Restart Game</button> 
+                </div>
+                <div class="history"></div>
+                <div class="game-over hide">Game Over</div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h2></h2>
+        <table>
+            <colgroup>
+               <col span="1" style="width: 15%;">
+               <col span="1" style="width: 15%;">
+               <col span="1" style="width: 70%;">
+            </colgroup>
+            <thead>
+                <th>Pokemon</th>
+                <th>Count</th>
+                <th>Histogram</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Bulbasaur</td>
+                    <td>0</td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Charmander</td>
+                    <td>0</td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Squirtle</td>
+                    <td>0</td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pikachu</td>
+                    <td>0</td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Eevee</td>
+                    <td>0</td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mewtwo</td>
+                    <td>0</td>
+                    <td>
+                    </td>
+                </tr>
+            </tbody>
+        </table>        
+    </footer>
+</body>
+</html>

@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    background-color: black;
+}
+
+h1 {
+    margin-block: 1.75em;
+}
+
+p {
+    font-weight: bolder;
+}
+
+main {
+    text-align: center;
+}
+
+img {
+    margin: 0;
+    aspect-ratio: 1;
+    width: 115px;
+}
+
+.easy-board {
+    display: grid;
+    margin: 0 auto;
+    aspect-ratio: 1;
+    width: 460px;
+    height: 345px;
+    grid-template-columns: repeat(4, 115px);
+    grid-template-rows: repeat(3, 115px);
+}
+
+.med-board {
+    display: grid;
+    margin: 0 auto;
+    aspect-ratio: 1;
+    width: 575px;
+    height: 460px;
+    grid-template-columns: repeat(5, 115px);
+    grid-template-rows: repeat(4, 115px);
+}
+
+.hard-board {
+    display: grid;
+    margin: 0 auto;
+    aspect-ratio: 1;
+    width: 690px;
+    height: 575px;
+    grid-template-columns: repeat(6, 115px);
+    grid-template-rows: repeat(5, 115px);
+}
+
+#start-screen {
+    text-align: center;
+}
+
+#start-screen button {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    font-weight: bolder;
+    padding: 0.25em;
+}
+
+#gameover-screen {
+    text-align: center;
+}
+
+#gameover-screen div {
+    margin-block: 0.5em
+}
+
+#leaderboards {
+    text-align: center;
+}
+
+#leaderboard-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#playagain-button {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+    font-weight: bolder;
+    padding: 0.25em;
+}
+
+.gametile {
+    position: relative;
+    aspect-ratio: 1;
+    width: 115px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.gametile-flip {
+    transform: rotateY(180deg);
+}
+
+.fronttile, .backtile {
+    position: absolute;
+    inset: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.backtile {
+    transform: rotateY(180deg);
+}
+
+.error {
+    color: red;
+}
+
+.hide {
+    display: none !important;
+}
+
+.disable {
+    pointer-events: none;
+}

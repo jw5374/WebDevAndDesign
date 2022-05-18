@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Macro Assignment 05</title>
+</head>
+<body>
+    <main id="grid-container">
+        <header>
+            <h1>Seasonal To-Do List</h1>
+            <select name="seasonal-select" id="filterdropdown">
+                <option value="all">Show all items</option>
+                <option value="winter">Show only Winter items</option>
+                <option value="spring">Show only Spring items</option>
+                <option value="summer">Show only Summer items</option>
+                <option value="fall">Show only Fall items</option>
+                <option value="completed">Show only Completed items</option>
+                <option value="incomplete">Show only Incomplete items</option>
+            </select>
+        </header>
+            <main id="notes-container"></main>
+        <footer>
+            <button id="add-new">
+                <img src="../../assets/assignment05_images/add_button.png" alt="add button img">
+            </button>
+        </footer>
+        <div id="new-item-form" class="item-form hide">
+            <h2>Add New Item</h2>
+            <p class="error hide">Please completely fill out the form</p>
+            <form>
+                <label for="title">Title</label>
+                <br>
+                <input type="text" name="title" id="title-input">
+                <br><br>
+                <label for="category">Category</label>
+                <br>
+                <select name="category" id="category-select">
+                    <option value="winter">Winter</option>
+                    <option value="spring">Spring</option>
+                    <option value="summer">Summer</option>
+                    <option value="fall">Fall</option>
+                </select>
+                <br><br>
+                <label for="description">Description</label>
+                <br>
+                <textarea name="description" id="item-desc" cols="30" rows="5"></textarea>
+                <br><br>
+                <button id="save-item">Save</button>
+                <button id="cancel-item">Cancel</button>
+            </form>
+        </div>
+        <div id="edit-item-form" class="item-form hide">
+            <h2></h2>
+            <p class="error hide">Please completely fill out the form</p>
+            <form>
+                <label for="title">Title</label>
+                <br>
+                <input type="text" name="title" id="title-input">
+                <br><br>
+                <label for="category">Category</label>
+                <br>
+                <select name="category" id="category-select">
+                    <option value="winter">Winter</option>
+                    <option value="spring">Spring</option>
+                    <option value="summer">Summer</option>
+                    <option value="fall">Fall</option>
+                </select>
+                <br><br>
+                <label for="description">Description</label>
+                <br>
+                <textarea name="description" id="item-desc" cols="30" rows="5"></textarea>
+                <br><br>
+                <button id="save-edit-item">Save</button>
+                <button id="cancel-edit-item">Cancel</button>
+            </form>
+        </div>
+        <div id="item-summary" class="item-form hide">
+            <h2></h2>
+            <p id="season"></p>
+            <p id="description"></p>
+            <hr>
+            <p id="created"></p>
+            <p id="lastAccessed"></p>
+            <button id="closesummary">Close</button>
+        </div>
+    </main>
+</body>
+</html>

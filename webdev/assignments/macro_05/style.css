@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+#grid-container {
+    display: grid;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../../assets/assignment05_images/corkboard.jpg');
+    grid-template-areas: 
+        "header"
+        "notes"
+        "footer";
+    grid-template-rows: auto 1fr auto;
+}
+
+#grid-container header {
+    grid-area: header;
+    display: flex;
+    justify-content: end;
+    gap: 325px;
+    height: max-content;
+    padding: 0.5rem;
+}
+
+#grid-container header h1 {
+    color: white;
+    text-shadow: 3px 3px 2px black;
+    margin-block: 0.5em;
+}
+
+#filterdropdown {
+    height: min-content;
+    margin-block: auto;
+}
+
+#notes-container {
+    grid-area: notes;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    padding-inline: 1em;
+    flex-wrap: wrap;
+}
+
+#grid-container footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: end;
+    height: max-content;
+    padding: 0.5rem;
+}
+
+#add-new {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    transition: transform 250ms ease;
+    cursor: pointer;
+}
+
+#add-new:hover {
+    transform: scale(1.2);
+}
+
+.item-form {
+    position: absolute;
+    top: 18%;
+    left: 34%;
+    aspect-ratio: 1;
+    width: 500px;
+    border-radius: 1em;
+    background-color: white;
+    padding: 1em;
+}
+
+#new-item-form form #title-input,
+#new-item-form form #category-select,
+#new-item-form form #item-desc {
+    width: 100%;
+}
+
+#new-item-form form #item-desc {
+    resize: none;
+}
+
+#closesummary {
+    display: block;
+    margin-inline: auto;
+}
+
+.note {
+    position: relative;
+    display: inline-block;
+    height: 175px;
+    width: 175px;
+    padding: 0.5em;
+}
+
+.delete-note {
+    position: absolute;
+    opacity: 0;
+    top: -10px;
+    right: -10px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: opacity 250ms ease;
+}
+
+.note:hover .delete-note {
+    opacity: 1;
+}
+
+.move-item-left {
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.move-item-right {
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.edit-item {
+    position: absolute;
+    top: 70%;
+    left: 45%;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    cursor: pointer;
+}
+
+.incomplete {
+    filter: hue-rotate(-90deg);
+}
+
+.winter {
+    background-color: skyblue;
+}
+
+.spring {
+    background-color: lightgreen;
+}
+
+.summer {
+    background-color: orangered
+}
+
+.fall {
+    background-color: olive;
+}
+
+.error {
+    background-color: red;
+    text-align: center;
+    height: 2em;
+    line-height: 2em;
+}
+
+.over {
+    border: 3px dotted #666;
+}
+
+.hide {
+    display: none;
+}
+

@@ -1,0 +1,23 @@
+Wireframing
+A paragraph of at least 100 words describing a professionally-oriented website topic (1 point)
+Website wireframe of the page layout (1 point)
+
+Content
+#Semantic text elements on each page (0.5 point)
+#There should be semantic section elements on each page (1 point)
+#Pages should link to each other with “relative” URLs; longer pages should incorporate anchor links (1 point)
+#Each page should include properly formatted JPG, PNG, GIF, or SVG images; img elements should include src, width, height, and alt attributes with appropriate values (1 point)
+#Higher-resolution (2x) versions of all raster graphics should be offered in conjunction with the srcset attribute (0.5 point)
+#Web-formatted audio or video, under 10 MB, using the HTML <audio> or <video> element. (1 point)
+
+Form
+#Style rules should specify font family and font size for paragraph and heading text, and link states (1 point)
+#A web font applied with the CSS @font-face rule (0.5 point)
+#The CSS Flexible Box Layout Module (Flexbox) for arranging items along one axis and/or the CSS #Grid Layout Module for the overall page structure (1.5 points)
+#The viewport should be set on all HTML pages and the CSS should include at least one @media query with a breakpoint to optimize the layout for different browser widths (1 point)
+#Mobile-optimized layout should be limited to one column; desktop layout should include two or more columns (1 point)
+
+Interaction
+#At least two DOM queries (0.5 point)
+#There should be at least one function that is called in response to a DOM event (1.5 points)
+#The function should update page content and/or change CSS properties (1 point)

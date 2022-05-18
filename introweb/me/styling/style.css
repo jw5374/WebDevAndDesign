@@ -1,0 +1,81 @@
+body {
+    background-color: black;
+    color: white;
+    padding: 50px;
+}
+
+h1, h2, h3 {
+    font-family:'Courier New', Courier, monospace;
+    font-size: medium;
+}
+
+p {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: small;
+}
+
+aside {
+    float: right;
+    text-align: right;
+}
+
+img {
+    width: 500px;
+    height: auto;
+}
+
+section {
+    float: left;
+    width: 100%;
+}
+
+footer {
+    clear: both;
+}
+
+a:active {
+    color: aqua;
+}
+
+a:visited {
+    color: darkslategray;
+}
+
+a:hover {
+    color:darkviolet;
+}
+
+a:link {
+    color: darkblue;
+}
+
+#animeHeader {
+    font-style: italic;
+}
+
+.introClass {
+    font-weight: bolder;
+}
+
+*::-webkit-scrollbar {
+    display: block;
+    width: 16px;
+}
+
+*::-webkit-scrollbar-button {
+    display: none;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: #00000000;
+}
+
+*::-webkit-scrollbar-track-piece {
+    background-color: #00000000;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #c0c0c0e8;
+    border: 1px solid #ffffff40;
+    border-radius: 24px;
+}

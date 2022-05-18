@@ -1,0 +1,61 @@
+header {
+    display: inline-block;
+}
+
+body {
+    color: white;
+}
+
+body h1 {
+    color: cyan;
+}
+
+html {
+    background-color: black;
+}
+
+svg {
+    height: 100%;
+    width: 100%;
+}
+
+a:active {
+    color: deepskyblue;
+}
+
+a:hover {
+    color: lime;
+}
+
+/* just to supersede the element style since selecting "a" tag will not overwrite preexisting fill */
+svg rect:active {
+    fill: deepskyblue; 
+}
+
+svg rect:hover {
+    fill: lime;
+    opacity: 0.2;
+}
+
+*::-webkit-scrollbar {
+    display: block;
+    width: 16px;
+}
+
+*::-webkit-scrollbar-button {
+    display: none;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: #00000000;
+}
+
+*::-webkit-scrollbar-track-piece {
+    background-color: #00000000;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #c0c0c0e8;
+    border: 1px solid #ffffff40;
+    border-radius: 24px;
+}
